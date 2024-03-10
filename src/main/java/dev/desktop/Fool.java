@@ -52,7 +52,8 @@ public class Fool {
         report(line, "", message);
     }
     private static void report(int line, String where, String message) {
-        
+        // print error
+        System.err.println();
     }
 }
 
