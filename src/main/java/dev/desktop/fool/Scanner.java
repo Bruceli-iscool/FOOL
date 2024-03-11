@@ -8,5 +8,6 @@ import java.util.Map;
 import static dev.desktop.fool.TokenType.*;
 
 class Scanner {
-    
+    private final String source;
+    private final 
 }
