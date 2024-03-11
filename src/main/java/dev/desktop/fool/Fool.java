@@ -1,4 +1,4 @@
-package dev.desktop;
+package dev.desktop.fool;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -12,6 +12,7 @@ import java.util.Scanner;
 
 
 public class Fool {
+    static boolean hadError = false;
     public static void main(String[] args) throws IOException {
         if (args.length > 1) {
             System.out.println("Usage: fool [filename]");
@@ -26,6 +27,7 @@ public class Fool {
     private static void runFile(String path) throws IOException {
         byte[] bytes = Files.readAllBytes(Paths.get(path));
         run(new String(bytes, Charset.defaultCharset()));
+        if (hadError) System.exit(65);
     }
     private static void runPrompt() throws IOException {
         InputStreamReader input = new InputStreamReader(System.in);
@@ -36,6 +38,7 @@ public class Fool {
             String line = reader.readLine();
             if (line == null) break;
             run(line);
+            hadError = false;
         }
     }
     // shell like interface
@@ -53,7 +56,8 @@ public class Fool {
     }
     private static void report(int line, String where, String message) {
         // print error
-        System.err.println();
+        System.err.println("[line" + line + "] Error" + where + ": " + message);
+        hadError = true;
     }
 }
 
