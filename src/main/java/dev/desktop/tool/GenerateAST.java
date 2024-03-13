@@ -19,8 +19,7 @@ public class GenerateAST {
                 "Unary    : Token operator, Expr right"
         ));
         private static void defineAst(
-                String outputDir, String baseName, List<String> types)
-      throws IOException {
+                String outputDir, String baseName, List<String> types)throws IOException {
             String path = outputDir + "/" + baseName + ".java";
             PrintWriter writer = new PrintWriter(path, "UTF-8");
 
@@ -33,5 +32,6 @@ public class GenerateAST {
             writer.println("}");
             writer.close();
         }
+    }
     }
 }
