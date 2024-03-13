@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91cd1faa-b20c-4f25-bcf2-42ac3d7190f0" name="Changes" comment="Add">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/desktop/tool/GenerateAST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/desktop/tool/GenerateAST.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +40,8 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "/Users/keli/IdeaProjects/FOOL/src/main/java/dev/desktop"
+    "last_directory_selection": "/Users/keli/IdeaProjects/FOOL/src/main/java/dev/desktop",
+    "run.code.analysis.last.selected.profile": "pProject Default"
   }
 }]]></component>
   <component name="RecentsManager">
